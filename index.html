@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="fr" class="lenis-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Killian Rulleau | Portfolio 2026</title>
+
+  <meta name="description"
+    content="Portfolio de Killian Rulleau, 22 ans, Alternant Manager en Marketing Digital & Communication.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon"
+    href="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/6799a3815e5e38693cf695a7_Frame%201597882774.png"
+    type="image/x-icon">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       AMBIENT BACKGROUND
+       ========================================================================== -->
+  <div class="ambient-background">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       CUSTOM CURSOR
+       ========================================================================== -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-ring" id="cursor-ring">
+    <span class="custom-cursor-label" id="cursor-label"></span>
+  </div>
+
+  <!-- ==========================================================================
+       PRELOADER (0% -> 100% - Word KILLIAN)
+       ========================================================================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-header">
+      <span class="nav-logo interactive">KILLIAN<span class="nav-logo-dot"></span></span>
+    </div>
+
+    <div class="preloader-center">
+      <h2 class="preloader-title" id="preloader-title">CONCEVOIR L'AVENIR DU MARKETING DIGITAL</h2>
+      <div class="preloader-percentage-container">
+        <span class="preloader-number" id="preloader-num">0</span>
+        <span class="preloader-symbol">%</span>
+      </div>
+    </div>
+
+    <div class="preloader-footer">
+      <span>MON PORTFOLIO</span>
+      <span>© 2026</span>
+    </div>
+
+    <div class="preloader-bar-bg">
+      <div class="preloader-bar" id="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="nav" id="nav">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo interactive" data-cursor="accueil">
+        KILLIAN<span class="nav-logo-dot"></span>
+      </a>
+
+      <button class="nav-menu-btn interactive" id="menu-btn" data-cursor="menu">
+        <span>Menu</span>
+        <div class="nav-menu-icon">
+          <div class="nav-menu-line"></div>
+          <div class="nav-menu-line" style="width: 70%; align-self: flex-end;"></div>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       FULLSCREEN OVERLAY MENU
+       ========================================================================== -->
+  <div class="menu-overlay" id="menu-overlay">
+    <button class="menu-close-btn interactive" id="menu-close-btn" data-cursor="fermer">
+      <span>Fermer</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L13 13M1 13L13 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <nav class="menu-links">
+      <div class="menu-link-wrapper">
+        <a href="#hero" class="menu-link interactive active" data-cursor="aller">01. Accueil</a>
+      </div>
+      <div class="menu-link-wrapper">
+        <a href="#zoom-portal-section" class="menu-link interactive" data-cursor="aller">02. Vision</a>
+      </div>
+      <div class="menu-link-wrapper">
+        <a href="#split-section" class="menu-link interactive" data-cursor="aller">03. Personnalité</a>
+      </div>
+      <div class="menu-link-wrapper">
+        <a href="#timeline-section" class="menu-link interactive" data-cursor="aller">04. Mon Parcours</a>
+      </div>
+      <div class="menu-link-wrapper">
+        <a href="#work" class="menu-link interactive" data-cursor="aller">05. GMS Diffusion</a>
+      </div>
+      <div class="menu-link-wrapper">
+        <a href="#agency" class="menu-link interactive" data-cursor="aller">06. Agence Dclics</a>
+      </div>
+      <div class="menu-link-wrapper">
+        <a href="#tools" class="menu-link interactive" data-cursor="aller">07. Outils</a>
+      </div>
+      <div class="menu-link-wrapper">
+        <a href="#gallery" class="menu-link interactive" data-cursor="aller">08. Galerie</a>
+      </div>
+      <div class="menu-link-wrapper">
+        <a href="#contact" class="menu-link interactive" data-cursor="aller">09. Contact</a>
+      </div>
+    </nav>
+
+    <div class="menu-overlay-footer">
+      <div class="menu-socials">
+        <a href="https://linkedin.com" target="_blank" class="menu-social-link interactive"
+          data-cursor="visiter">LinkedIn</a>
+        <a href="https://github.com" target="_blank" class="menu-social-link interactive"
+          data-cursor="visiter">Github</a>
+        <a href="https://pinterest.com" target="_blank" class="menu-social-link interactive"
+          data-cursor="visiter">Pinterest</a>
+      </div>
+      <div class="menu-info">
+        <p>Disponible pour de nouvelles opportunités.</p>
+        <p>Le Mans, France — En Alternance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN SCROLL CONTENT (LENIS CONTAINER)
+       ========================================================================== -->
+  <main id="main">
+
+    <!-- ==========================================================================
+         HERO SECTION (SNAP PARALLAX)
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+      </div>
+
+      <div class="container hero-container" id="hero-content-wrapper">
+        <span class="hero-tag" id="hero-tag">Killian Rulleau — 22 ans</span>
+
+        <h1 class="hero-title" id="hero-title">
+          <span>MANAGER EN</span>
+          <span class="hero-gradient-text">MARKETING DIGITAL</span>
+          <span>& COMMUNICATION</span>
+        </h1>
+
+        <div class="hero-footer">
+          <p class="hero-description" id="hero-desc">
+            Étudiant en Master Marketing Digital et actuellement en alternance chez GMS Diffusion, je développe des
+            stratégies marketing et de communication digitales performantes en combinant IA, SEO/SEA, Social Media et
+            Data
+            Analytics. J’interviens sur la gestion de sites e-commerce et de l'optimisation de l'expérience client, le
+            développement BtoB et la coordination de projets externes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WOW CENTERPIECE: CIRCLE ZOOM REVEAL & SLIDING BANNER (NEW)
+         ========================================================================== -->
+    <section class="zoom-portal-section" id="zoom-portal-section">
+      <div class="zoom-portal-trigger" id="zoom-portal-trigger">
+
+        <!-- Layer 1: Center Text & Glowing Circular Portal (Outer) -->
+        <div class="portal-layer-outer" id="portal-layer-outer">
+          <div class="portal-outer-text" id="portal-outer-text">
+            <span>Découvrir mon Portfolio</span>
+          </div>
+          <!-- Glowing circular node to grow massively -->
+          <div class="portal-circle-glow" id="portal-growing-circle"></div>
+        </div>
+
+        <!-- Layer 2: Revealed Content (Inner) -->
+        <div class="portal-layer-inner" id="portal-layer-inner">
+          <div class="portal-inner-content">
+
+            <!-- Giant Horizontally Sliding Text -->
+            <div class="portal-sliding-text-wrap">
+              <h2 class="portal-sliding-text" id="portal-sliding-text">
+                Automatisation IA • E-commerce & CMS • Acquisition Digitale • Data & Performance • CRM & Marketing
+                Automation • Social Media & Paid Ads
+              </h2>
+            </div>
+
+            <!-- Revealed Descriptive glass panels -->
+            <div class="portal-cards-wrapper container">
+
+              <!-- Card 1: Présentation -->
+              <div class="portal-inner-card portal-card-presentation">
+                <div class="portal-card-split">
+                  <div class="portal-card-image-wrapper">
+                    <img src="killian-Rulleau-web.jpg" alt="Killian Rulleau" class="portal-card-image">
+                  </div>
+                  <div class="portal-card-text">
+                    <span class="portal-card-tag">Présentation</span>
+                    <h3 class="portal-card-title">Hello, moi c'est Killian</h3>
+                    <p class="portal-card-desc">
+                      À 22 ans, je combine créativité, data et technique pour façonner des stratégies de marketing
+                      digital innovantes. Passionné par l'automatisation, l'IA et l'optimisation des performances, je
+                      conçois des solutions modernes qui propulsent l'impact numérique des marques.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2: Maîtrise de l'Écosystème Digital -->
+              <div class="portal-inner-card portal-card-mastery">
+                <span class="portal-card-tag">Expertise Technique</span>
+                <h3 class="portal-card-title">Maîtrise de l'Écosystème Digital</h3>
+                <p class="portal-card-desc">
+                  Mon principal domaine d’expertise réside dans les aspects techniques du digital, avec une forte
+                  appétence pour l’automatisation, la performance et l’optimisation des outils numériques. J’évolue
+                  principalement autour des CMS e-commerce, des solutions marketing et analytics, des outils créatifs et
+                  des environnements techniques, en intégrant les technologies d’IA et les solutions no-code pour
+                  améliorer l’efficacité et les résultats.
+
+                </p>
+              </div>
+
+              <!-- Card 3: Pilotage & Lancement de Projets -->
+              <div class="portal-inner-card portal-card-project">
+                <span class="portal-card-tag">Stratégie & Performance</span>
+                <h3 class="portal-card-title">Pilotage & Lancement de Projets</h3>
+                <p class="portal-card-desc">
+                  Mon second domaine d’expertise concerne la gestion et le pilotage de projets digitaux. J’interviens
+                  dans la direction de campagnes publicitaires SEA/SMA, la coordination de prestataires et d’équipes
+                  internes, ainsi que dans le développement stratégique de projets via la cofondation d’agence. Mon
+                  approche consiste à articuler les ressources créatives, techniques et analytiques afin d’assurer des
+                  lancements performants et de maximiser le retour sur investissement.
+
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SPLIT SECTION (QUALITÉS & DEFIS - SCI-FI DASHBOARD GRID PINNED)
+         ========================================================================== -->
+    <section class="split-section" id="split-section">
+      <div class="container split-container">
+
+        <div class="split-dashboard">
+
+          <!-- Central Separator Orb -->
+          <div class="split-center-portal">
+            <div class="portal-circle">
+              <span>VS</span>
+            </div>
+          </div>
+
+          <!-- Column 1: Qualities (Cyan Neon Glow) -->
+          <div class="dashboard-col col-cyan" id="panel-left">
+            <div class="dashboard-header">
+              <div class="dashboard-badge">FORCES</div>
+              <h3 class="dashboard-title">Mes Atouts Clés</h3>
+            </div>
+
+            <div class="dashboard-grid">
+              <!-- Item 1 -->
+              <div class="dashboard-card interactive" data-cursor="force">
+                <span class="card-num-neon">01</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Rigueur Analytique & Data</h4>
+                  <p class="card-text">Exploitation approfondie des KPIs et analyses de conversion pour piloter
+                    scientifiquement chaque action.</p>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="dashboard-card interactive" data-cursor="force">
+                <span class="card-num-neon">02</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Créativité Disruptive</h4>
+                  <p class="card-text">Conception d'angles de communication inédits et marquants pour capter
+                    instantanément l'attention.</p>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="dashboard-card interactive" data-cursor="force">
+                <span class="card-num-neon">03</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Agilité Technique & Fullstack</h4>
+                  <p class="card-text">Interconnexion d'outils CRM, automatisation et développement web pour lever tout
+                    obstacle technique.</p>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="dashboard-card interactive" data-cursor="force">
+                <span class="card-num-neon">04</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Leadership Collaboratif</h4>
+                  <p class="card-text">Aptitude naturelle à fédérer des équipes multidisciplinaires et encadrer des
+                    stagiaires/alternants.</p>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="dashboard-card interactive" data-cursor="force">
+                <span class="card-num-neon">05</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Growth Mindset & Veille</h4>
+                  <p class="card-text">Apprentissage permanent des derniers algorithmes publicitaires et hacks
+                    d'acquisition média.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Challenges (Pink Neon Glow) -->
+          <div class="dashboard-col col-pink" id="panel-right">
+            <div class="dashboard-header">
+              <div class="dashboard-badge badge-pink">AXES</div>
+              <h3 class="dashboard-title">Mes Défis</h3>
+            </div>
+
+            <div class="dashboard-grid">
+              <!-- Item 1 -->
+              <div class="dashboard-card interactive" data-cursor="défi">
+                <span class="card-num-neon">01</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Perfectionnisme Esthétique</h4>
+                  <p class="card-text">Une exigence de rendu extrêmement élevée, demandant d'arbitrer entre le pixel
+                    parfait et la vitesse.</p>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="dashboard-card interactive" data-cursor="défi">
+                <span class="card-num-neon">02</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Impatience de Performance</h4>
+                  <p class="card-text">Le désir intense de voir les indicateurs clés (ROI, ventes) décoller dès la
+                    première seconde de lancement.</p>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="dashboard-card interactive" data-cursor="défi">
+                <span class="card-num-neon">03</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Exigence Technique Maximale</h4>
+                  <p class="card-text">Une volonté d'automatiser et de structurer chaque tâche, ce qui pousse parfois à
+                    sur-optimiser les flux.</p>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="dashboard-card interactive" data-cursor="défi">
+                <span class="card-num-neon">04</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Appétit de Projets Illimité</h4>
+                  <p class="card-text">Une curiosité sans limite me poussant à vouloir explorer et lancer plusieurs
+                    concepts innovants en parallèle.</p>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="dashboard-card interactive" data-cursor="défi">
+                <span class="card-num-neon">05</span>
+                <div class="card-body">
+                  <h4 class="card-heading">Analyse Ultra-Micro</h4>
+                  <p class="card-text">Une tendance à plonger profondément dans les micro-données utilisateurs,
+                    demandant de reprendre de la haute.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TIMELINE SECTION (INTERACTIVE LED CHROMATIC FRISSE - SERPENTINE)
+         ========================================================================== -->
+    <section class="timeline-section" id="timeline-section">
+      <div class="container">
+        <span class="section-tag">03. Mon Parcours</span>
+        <h2 class="section-title">L'Évolution de ma Carrière</h2>
+
+        <div class="timeline-trigger" id="timeline-trigger">
+
+          <!-- Serpent SVG Line Overlay -->
+          <svg class="serpent-svg-overlay" id="serpent-svg-overlay">
+            <defs>
+              <linearGradient id="gradient-neon" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-pink)" />
+                <stop offset="100%" stop-color="var(--accent-blue)" />
+              </linearGradient>
+            </defs>
+            <path class="serpent-path-bg" id="serpent-path-bg" d="" />
+            <path class="serpent-path-progress" id="serpent-path-progress" d="" />
+          </svg>
+
+          <!-- Item 1: Bac Pro (Odd - Card on Right) -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-school">Lycée Professionnel</span>
+              <span class="timeline-year">2018 - 2021</span>
+              <h3 class="timeline-degree">Baccalauréat Professionnel</h3>
+              <p class="timeline-desc">
+                Apprentissage des techniques de vente physique, négociation commerciale et réalisation de trois stages
+                d'immersion professionnelle.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: BTS SIO (Even - Card on Left) -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-school">Saint Charles Saint Croix — Le Mans</span>
+              <span class="timeline-year">2021 - 2023</span>
+              <h3 class="timeline-degree">BTS SIO (Services informatiques aux organisations)</h3>
+              <p class="timeline-desc">
+                Développement et maintenance de sites web (vitrines et e-commerce). Gestion de réseaux locaux
+                d’entreprise, administration de bases de données MySQL et stage technique chez Art's Wave au Mans.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Bachelor (Odd - Card on Right) -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-school">EKOD — CCI du MANS</span>
+              <span class="timeline-year">2023 - 2024</span>
+              <h3 class="timeline-degree">Bachelor Chef de Projet en Communication Digitale</h3>
+              <p class="timeline-desc">
+                Alternance chez <strong>GMS Diffusion</strong>. Élaboration de stratégies marketing et communication
+                digitale (SEO, réseaux sociaux, emailing) et gestion technique des sites e-commerce (WordPress+,
+                Shopify).
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4: Master (Even - Card on Left) -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-school">EGC CCI Le Mans</span>
+              <span class="timeline-year">2024 - 2026</span>
+              <h3 class="timeline-degree">Master Manager Marketing Digital et Communication</h3>
+              <p class="timeline-desc">
+                Poursuite en alternance (GMS Diffusion) : Pilotage global de la relation client (UX, SAV automatisé),
+                conception de formations internes et management d'équipes transverses (logistique, com).
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WORK / PROJECTS SECTION (GMS DIFFUSION - HORIZONTAL PINNED SHOWCASE)
+         ========================================================================== -->
+    <div class="work-pinned-container" id="work">
+      <div class="work-header-section">
+        <div class="container work-header-grid">
+          <div>
+            <span class="section-tag">04. Mon Poste en alternance</span>
+            <h2 class="section-title">Responsable Marketing chez GMS Diffusion</h2>
+          </div>
+          <p class="work-header-desc">
+            Au sein de GMS Diffusion, je pilote la stratégie digitale globale. Ma mission majeure comprend la vente et
+            la communication des **sacs officiels des 24h du Mans** en collaboration étroite avec l'**ACO (Automobile
+            Club de l'Ouest)**, ainsi que le déploiement de gammes de bagages et valises en grande distribution.
+          </p>
+        </div>
+      </div>
+
+      <div class="work-trigger" id="work-trigger">
+        <div class="work-wrapper" id="work-wrapper">
+
+          <!-- Slide 1: Marketing Digital -->
+          <div class="work-slide">
+            <div class="work-slide-content">
+              <div class="work-meta">
+                <span class="work-num">01 / 06</span>
+                <h3 class="work-title-giant">MARKETING DIGITAL</h3>
+                <p class="work-desc">
+                  Conception et pilotage de plans d'acquisition multicanaux et déploiement de campagnes publicitaires
+                  (SEA/SMA) ciblées pour dynamiser les ventes e-commerce.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Communication & Réseaux -->
+          <div class="work-slide">
+            <div class="work-slide-content">
+              <div class="work-meta">
+                <span class="work-num">02 / 06</span>
+                <h3 class="work-title-giant">COMMUNICATION</h3>
+                <p class="work-desc">
+                  Création d'une identité visuelle forte, animation de nos réseaux sociaux et élaboration de catalogues
+                  pour notre collaboration officielle avec les 24h du Mans.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Tech & E-Commerce -->
+          <div class="work-slide">
+            <div class="work-slide-content">
+              <div class="work-meta">
+                <span class="work-num">03 / 06</span>
+                <h3 class="work-title-giant">DEVELOPPEMENT WEB</h3>
+                <p class="work-desc">
+                  Développement et optimisation UX/UI de nos boutiques en ligne (Shopify, WordPress) et synchronisation
+                  en temps réel avec nos outils CRM internes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Data & Rentabilité -->
+          <div class="work-slide">
+            <div class="work-slide-content">
+              <div class="work-meta">
+                <span class="work-num">04 / 06</span>
+                <h3 class="work-title-giant">ANALYSE KPIs</h3>
+                <p class="work-desc">
+                  Analyse approfondie du comportement utilisateur, reporting régulier des KPIs (taux de conversion, ROI)
+                  et suivi comptable des gammes de produits.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5: Automatisation & SAV -->
+          <div class="work-slide">
+            <div class="work-slide-content">
+              <div class="work-meta">
+                <span class="work-num">05 / 06</span>
+                <h3 class="work-title-giant">AUTOMATISATION</h3>
+                <p class="work-desc">
+                  Création de flux d'automatisation des tâches récurrentes, refonte des processus logistiques et gestion
+                  100% numérique du Service Après-Vente.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6: Management -->
+          <div class="work-slide">
+            <div class="work-slide-content">
+              <div class="work-meta">
+                <span class="work-num">06 / 06</span>
+                <h3 class="work-title-giant">MANAGEMENT</h3>
+                <p class="work-desc">
+                  Recrutement, accueil, encadrement technique et accompagnement managérial d'autres stagiaires et
+                  alternants au sein du service marketing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         AGENCE DCLICS
+         ========================================================================== -->
+    <section class="agency" id="agency">
+      <div class="container">
+        <div class="agency-box">
+          <div class="agency-grid">
+            <div>
+              <span class="agency-tag">05. Mon Agence</span>
+              <h2 class="agency-title">L'Agence Dclics</h2>
+              <p class="agency-desc">
+                En parallèle de mes activités d'alternance, j'ai fondé l'<strong>Agence Dclics</strong>. Nous
+                accompagnons les entreprises locales dans leur transformation digitale, en proposant du conseil
+                stratégique, du développement web et de la publicité en ligne.
+              </p>
+              <p class="agency-desc" style="color: var(--text-muted); font-size: 0.95rem;">
+                [Cet espace accueillera prochainement la description complète et les réussites clés de l'agence Dclics.]
+              </p>
+            </div>
+
+            <div class="interactive" data-cursor="bientôt" style="opacity: 0.15; text-align: center;">
+              <svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="animation: spin 20s linear infinite;">
+                <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="1" stroke-dasharray="5 5" />
+                <path d="M50 20 L50 80 M20 50 L80 50" stroke="currentColor" stroke-width="1" />
+              </svg>
+              <style>
+                @keyframes spin {
+                  100% {
+                    transform: rotate(360deg);
+                  }
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TOOLS SECTION (MAGNETIC HOVER GRID)
+         ========================================================================== -->
+    <section class="tools" id="tools">
+      <div class="container tools-vertical-layout">
+
+        <div class="tools-header">
+          <span class="section-tag">06. Boîte à Outils</span>
+          <h2 class="section-title">Les Outils que je Maîtrise</h2>
+        </div>
+
+        <!-- Drawers grid (top) -->
+        <div class="drawers-grid">
+
+          <!-- Drawer 1: Marketing & Acquisition -->
+          <div class="drawer-card" data-drawer="1">
+            <div class="drawer-front">
+              <h3 class="drawer-title">
+                Marketing & Acquisition
+              </h3>
+            </div>
+            <div class="drawer-content-wrap">
+              <div class="drawer-content">
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/3.png" alt="HubSpot" class="tool-logo">
+                  <span>HubSpot</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/4.png" alt="Mailchimp" class="tool-logo">
+                  <span>Mailchimp</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/5.png" alt="Brevo" class="tool-logo">
+                  <span>Brevo</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/6.png" alt="Klaviyo" class="tool-logo">
+                  <span>Klaviyo</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/12.png" alt="Google Ads" class="tool-logo">
+                  <span>Google Ads</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drawer 2: Réseaux Sociaux -->
+          <div class="drawer-card" data-drawer="2">
+            <div class="drawer-front">
+              <h3 class="drawer-title">
+                Réseaux Sociaux
+              </h3>
+            </div>
+            <div class="drawer-content-wrap">
+              <div class="drawer-content">
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/13.png" alt="Meta Ads" class="tool-logo">
+                  <span>Meta Ads</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/14.png" alt="TikTok" class="tool-logo">
+                  <span>TikTok</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/15.png" alt="Facebook" class="tool-logo">
+                  <span>Facebook</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/23.png" alt="Instagram" class="tool-logo">
+                  <span>Instagram</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/24.png" alt="Swello" class="tool-logo">
+                  <span>Swello</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drawer 3: E-commerce & Web -->
+          <div class="drawer-card" data-drawer="3">
+            <div class="drawer-front">
+              <h3 class="drawer-title">
+                E-commerce & Web
+              </h3>
+            </div>
+            <div class="drawer-content-wrap">
+              <div class="drawer-content">
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/7.png" alt="Shopify" class="tool-logo">
+                  <span>Shopify</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/8.png" alt="WordPress" class="tool-logo">
+                  <span>WordPress</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/9.png" alt="Wix" class="tool-logo">
+                  <span>Wix</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/10.png" alt="WooCommerce" class="tool-logo">
+                  <span>WooCommerce</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/11.png" alt="Elementor" class="tool-logo">
+                  <span>Elementor</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/36.png" alt="OVH" class="tool-logo">
+                  <span>OVH</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/37.png" alt="Gandi" class="tool-logo">
+                  <span>Gandi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drawer 4: IA & Automatisation -->
+          <div class="drawer-card" data-drawer="4">
+            <div class="drawer-front">
+              <h3 class="drawer-title">
+                IA & Automatisation
+              </h3>
+            </div>
+            <div class="drawer-content-wrap">
+              <div class="drawer-content">
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/31.png" alt="ChatGPT" class="tool-logo">
+                  <span>ChatGPT</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/32.png" alt="Claude" class="tool-logo">
+                  <span>Claude</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/33.png" alt="Gemini" class="tool-logo">
+                  <span>Gemini</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/34.png" alt="n8n" class="tool-logo">
+                  <span>n8n</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/35.png" alt="Make" class="tool-logo">
+                  <span>Make</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drawer 5: Data & Stratégie -->
+          <div class="drawer-card" data-drawer="5">
+            <div class="drawer-front">
+              <h3 class="drawer-title">
+                Data & Stratégie
+              </h3>
+            </div>
+            <div class="drawer-content-wrap">
+              <div class="drawer-content">
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/16.png" alt="Google Analytics" class="tool-logo">
+                  <span>Google Analytics</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/17.png" alt="Search Console" class="tool-logo">
+                  <span>Search Console</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/18.png" alt="Tag Manager" class="tool-logo">
+                  <span>Tag Manager</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/19.png" alt="Looker Studio" class="tool-logo">
+                  <span>Looker Studio</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/20.png" alt="Semrush" class="tool-logo">
+                  <span>Semrush</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/21.png" alt="Google Trends" class="tool-logo">
+                  <span>Google Trends</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/22.png" alt="SQL" class="tool-logo">
+                  <span>SQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drawer 6: Création & Organisation -->
+          <div class="drawer-card" data-drawer="6">
+            <div class="drawer-front">
+              <h3 class="drawer-title">
+                Création & Organisation
+              </h3>
+            </div>
+            <div class="drawer-content-wrap">
+              <div class="drawer-content">
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/1.png" alt="Microsoft 365" class="tool-logo">
+                  <span>Microsoft 365</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/2.png" alt="Notion" class="tool-logo">
+                  <span>Notion</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/26.png" alt="Canva" class="tool-logo">
+                  <span>Canva</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/27.png" alt="Figma" class="tool-logo">
+                  <span>Figma</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/28.png" alt="CapCut" class="tool-logo">
+                  <span>CapCut</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/29.png" alt="HTML" class="tool-logo">
+                  <span>HTML</span>
+                </div>
+                <div class="tool-tag interactive" data-cursor="tool">
+                  <img src="logos portfolio/30.png" alt="CSS" class="tool-logo">
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Apple-style Dock Bar (bottom) -->
+        <div class="tools-dock" id="tools-dock">
+          <div class="dock-inner" id="logos-cloud">
+            <!-- Dock items are built via JS from drawer tags -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GALLERY / PROJECTS SECTION
+         ========================================================================== -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <span class="section-tag">07. Galerie</span>
+        <h2 class="section-title">Captures & Créations Numériques</h2>
+
+        <div class="gallery-subcategories">
+
+          <div class="gallery-subcategory">
+            <div class="subcategory-header">
+              <h3 class="subcategory-title">Sites Web</h3>
+              <p class="subcategory-count">6 Créations</p>
+            </div>
+            <div class="gallery-grid">
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dbf736b72a5c7ce0549e33_space-p-2000.jpg"
+                    alt="Sites Web Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Création Web</span>
+                  <h3 class="gallery-title">Sites Web Projet 1</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dbf736b72a5c7ce0549e33_space-p-2000.jpg"
+                    alt="Sites Web Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Création Web</span>
+                  <h3 class="gallery-title">Sites Web Projet 2</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dbf736b72a5c7ce0549e33_space-p-2000.jpg"
+                    alt="Sites Web Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Création Web</span>
+                  <h3 class="gallery-title">Sites Web Projet 3</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dbf736b72a5c7ce0549e33_space-p-2000.jpg"
+                    alt="Sites Web Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Création Web</span>
+                  <h3 class="gallery-title">Sites Web Projet 4</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dbf736b72a5c7ce0549e33_space-p-2000.jpg"
+                    alt="Sites Web Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Création Web</span>
+                  <h3 class="gallery-title">Sites Web Projet 5</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dbf736b72a5c7ce0549e33_space-p-2000.jpg"
+                    alt="Sites Web Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Création Web</span>
+                  <h3 class="gallery-title">Sites Web Projet 6</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-subcategory">
+            <div class="subcategory-header">
+              <h3 class="subcategory-title">Applications</h3>
+              <p class="subcategory-count">8 Créations</p>
+            </div>
+            <div class="gallery-grid">
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dc4c00868ab229f5e260c9_85e495639ddf70c388e258624875ae3b_AI_STUDIO_MEK_SITE-p-2000.jpg"
+                    alt="Applications Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Mobile / Web App</span>
+                  <h3 class="gallery-title">Applications Projet 1</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dc4c00868ab229f5e260c9_85e495639ddf70c388e258624875ae3b_AI_STUDIO_MEK_SITE-p-2000.jpg"
+                    alt="Applications Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Mobile / Web App</span>
+                  <h3 class="gallery-title">Applications Projet 2</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dc4c00868ab229f5e260c9_85e495639ddf70c388e258624875ae3b_AI_STUDIO_MEK_SITE-p-2000.jpg"
+                    alt="Applications Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Mobile / Web App</span>
+                  <h3 class="gallery-title">Applications Projet 3</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dc4c00868ab229f5e260c9_85e495639ddf70c388e258624875ae3b_AI_STUDIO_MEK_SITE-p-2000.jpg"
+                    alt="Applications Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Mobile / Web App</span>
+                  <h3 class="gallery-title">Applications Projet 4</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dc4c00868ab229f5e260c9_85e495639ddf70c388e258624875ae3b_AI_STUDIO_MEK_SITE-p-2000.jpg"
+                    alt="Applications Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Mobile / Web App</span>
+                  <h3 class="gallery-title">Applications Projet 5</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dc4c00868ab229f5e260c9_85e495639ddf70c388e258624875ae3b_AI_STUDIO_MEK_SITE-p-2000.jpg"
+                    alt="Applications Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Mobile / Web App</span>
+                  <h3 class="gallery-title">Applications Projet 6</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dc4c00868ab229f5e260c9_85e495639ddf70c388e258624875ae3b_AI_STUDIO_MEK_SITE-p-2000.jpg"
+                    alt="Applications Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Mobile / Web App</span>
+                  <h3 class="gallery-title">Applications Projet 7</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dc4c00868ab229f5e260c9_85e495639ddf70c388e258624875ae3b_AI_STUDIO_MEK_SITE-p-2000.jpg"
+                    alt="Applications Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Mobile / Web App</span>
+                  <h3 class="gallery-title">Applications Projet 8</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-subcategory">
+            <div class="subcategory-header">
+              <h3 class="subcategory-title">Projets Fictifs</h3>
+              <p class="subcategory-count">4 Créations</p>
+            </div>
+            <div class="gallery-grid">
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dd2c851ee0b4bb8137c8c1_AI_DogFocusGroup-p-2000.jpg"
+                    alt="Projets Fictifs Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Concept</span>
+                  <h3 class="gallery-title">Projets Fictifs Projet 1</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dd2c851ee0b4bb8137c8c1_AI_DogFocusGroup-p-2000.jpg"
+                    alt="Projets Fictifs Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Concept</span>
+                  <h3 class="gallery-title">Projets Fictifs Projet 2</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dd2c851ee0b4bb8137c8c1_AI_DogFocusGroup-p-2000.jpg"
+                    alt="Projets Fictifs Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Concept</span>
+                  <h3 class="gallery-title">Projets Fictifs Projet 3</h3>
+                </div>
+              </div>
+
+              <div class="gallery-item interactive" data-cursor="zoom">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/67997642f3d403660d64bfea/68dd2c851ee0b4bb8137c8c1_AI_DogFocusGroup-p-2000.jpg"
+                    alt="Projets Fictifs Projet" class="gallery-img">
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-category">Concept</span>
+                  <h3 class="gallery-title">Projets Fictifs Projet 4</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-content">
+
+          <div class="contact-left">
+            <div>
+              <span class="section-tag">08. Contact</span>
+              <h2 class="contact-heading">Mon profil vous interesse ?</h2>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <span class="contact-info-label">Adresse email</span>
+                <a href="mailto:killian.rulleau@gmail.com" class="contact-info-value interactive"
+                  data-cursor="écrire">killian.rulleau@gmail.com</a>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-label">Mes réseaux</span>
+                <a href="https://www.linkedin.com/in/killian-rulleau/" target="_blank"
+                  class="contact-info-value interactive" data-cursor="suivre">LinkedIn</a>
+                <a href="https://github.com/Killian-rll" target="_blank" class="contact-info-value interactive"
+                  data-cursor="suivre">Github</a>
+                <a href="https://fr.pinterest.com/kilianruleau/_profile/" target="_blank"
+                  class="contact-info-value interactive" data-cursor="suivre">Pinterest</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form class="contact-form" id="contact-form">
+
+              <div class="form-group">
+                <input type="text" class="form-input" placeholder=" " id="form-name" required>
+                <label class="form-label" for="form-name">Votre Nom</label>
+                <div class="form-line"></div>
+              </div>
+
+              <div class="form-group">
+                <input type="email" class="form-input" placeholder=" " id="form-email" required>
+                <label class="form-label" for="form-email">Adresse E-mail</label>
+                <div class="form-line"></div>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-input" placeholder=" " id="form-msg" rows="5" required
+                  style="resize: none;"></textarea>
+                <label class="form-label" for="form-msg">Votre Message</label>
+                <div class="form-line"></div>
+              </div>
+
+              <div class="magnetic-wrap" id="magnetic-submit">
+                <button type="submit" class="submit-btn interactive" data-cursor="envoyer">
+                  <span>Envoyer</span>
+                  <svg class="submit-btn-icon" viewBox="0 0 14 14" width="14" height="14">
+                    <path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <span class="footer-logo">KILLIAN<span class="nav-logo-dot"></span></span>
+
+        <p class="footer-copyright">
+          © 2026 Killian Rulleau. Tous droits réservés. Façonné avec l'art du mouvement.
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://linkedin.com" target="_blank" class="footer-social-link interactive"
+            data-cursor="visiter">Ln</a>
+          <a href="https://github.com" target="_blank" class="footer-social-link interactive"
+            data-cursor="visiter">Gh</a>
+          <a href="https://pinterest.com" target="_blank" class="footer-social-link interactive"
+            data-cursor="visiter">Pin</a>
+        </div>
+      </div>
+    </footer>
+
+  <div class="slide-bubble" data-cursor="scroll"></div>
+</main>
+
+  <!-- ==========================================================================
+       EXTERNAL DEPENDENCIES & JS LOGIC
+       ========================================================================== -->
+  <!-- GSAP & ScrollTrigger Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <!-- Main Logic -->
+  <script src="app.js"></script>
+</body>
+
+</html>
