@@ -700,17 +700,26 @@ function initToolsCabinet() {
 
     document.body.offsetHeight;
 
-    /* Lock content-wrap heights */
+    /* Lock content-wrap heights — +24px buffer so the last row is never clipped */
+    let maxDrawerHeight = 300; // fallback minimum
     drawers.forEach(drawer => {
       const content = drawer.querySelector('.drawer-content');
       const wrap = drawer.querySelector('.drawer-content-wrap');
+      const front = drawer.querySelector('.drawer-front');
       if (!content || !wrap) return;
-      const h = content.offsetHeight;
+      const h = content.offsetHeight + 24;
+      const frontH = front ? front.offsetHeight : 0;
+      const totalH = frontH + h;
       drawer.dataset.naturalHeight = h;
+      drawer.style.height = totalH + 'px';
       wrap.style.height = h + 'px';
       wrap.style.opacity = '1';
       wrap.style.overflow = 'visible';
+      if (totalH > maxDrawerHeight) maxDrawerHeight = totalH;
     });
+    /* Set the grid height to the tallest drawer so it doesn't collapse */
+    const grid = document.querySelector('.drawers-grid');
+    if (grid) grid.style.height = maxDrawerHeight + 'px';
 
     document.body.offsetHeight;
 
@@ -750,7 +759,7 @@ function initToolsCabinet() {
     scrollTrigger: {
       trigger: '.tools',
       start: 'top top',
-      end: '+=600%',
+      end: '+=1000%',
       pin: true,
       scrub: 1.2,
       invalidateOnRefresh: true
