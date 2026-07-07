@@ -78,6 +78,13 @@ function initCustomCursor() {
 
   if (!cursor || !cursorRing) return;
 
+  // Disable custom cursor on mobile and touch devices
+  if (window.matchMedia("(hover: none)").matches || window.innerWidth <= 768) {
+    cursor.style.display = 'none';
+    cursorRing.style.display = 'none';
+    return;
+  }
+
   let mouseX = window.innerWidth / 2;
   let mouseY = window.innerHeight / 2;
 
@@ -342,6 +349,14 @@ function initSplitSlidingEntry() {
 
   if (!splitSection || !panelLeft || !panelRight) return;
 
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    // Just make everything visible and scroll naturally on mobile
+    gsap.set('.dashboard-header', { opacity: 1 });
+    gsap.set('.dashboard-card', { opacity: 1, x: 0, y: 0, scale: 1 });
+    return;
+  }
+
   // 1. Pin the split section for long scrolling assembly
   const splitTl = gsap.timeline({
     scrollTrigger: {
@@ -370,8 +385,9 @@ function initSplitSlidingEntry() {
 
     if (leftCard) {
       // Random coordinates off-screen left/top/bottom
-      const randX = gsap.utils.random(-800, -300);
-      const randY = gsap.utils.random(-400, 400);
+      const isMobile = window.innerWidth <= 768;
+      const randX = isMobile ? gsap.utils.random(-300, -150) : gsap.utils.random(-800, -300);
+      const randY = isMobile ? gsap.utils.random(-200, 200) : gsap.utils.random(-400, 400);
       const randRot = gsap.utils.random(-35, 35);
 
       splitTl.fromTo(leftCard,
@@ -397,8 +413,9 @@ function initSplitSlidingEntry() {
 
     if (rightCard) {
       // Random coordinates off-screen right/top/bottom
-      const randX = gsap.utils.random(300, 800);
-      const randY = gsap.utils.random(-400, 400);
+      const isMobile = window.innerWidth <= 768;
+      const randX = isMobile ? gsap.utils.random(150, 300) : gsap.utils.random(300, 800);
+      const randY = isMobile ? gsap.utils.random(-200, 200) : gsap.utils.random(-400, 400);
       const randRot = gsap.utils.random(-35, 35);
 
       splitTl.fromTo(rightCard,
@@ -559,23 +576,25 @@ function initLEDTimeline() {
     });
 
     const content = item.querySelector('.timeline-content');
-    gsap.fromTo(content,
-      {
-        x: index % 2 === 0 ? 50 : -50,
-        opacity: 0
-      },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: item,
-          start: 'top 75%',
-          toggleActions: 'play none none reverse'
+    if (window.innerWidth > 768) {
+      gsap.fromTo(content,
+        {
+          x: index % 2 === 0 ? 50 : -50,
+          opacity: 0
+        },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.8,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 75%',
+            toggleActions: 'play none none reverse'
+          }
         }
-      }
-    );
+      );
+    }
   });
 }
 
@@ -620,7 +639,7 @@ function initGMSHorizontalScroll() {
     const desc = slide.querySelector('.work-desc');
 
     gsap.from([num, title, desc], {
-      y: 50,
+      x: 100,
       opacity: 0,
       duration: 0.8,
       stagger: 0.1,

@@ -37,7 +37,13 @@
 
 @media (max-width: 768px) {
   :root {
-    --section-padding: 4.5rem 1.5rem;
+    --section-padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --section-padding: 2.5rem 1rem;
   }
 }
 
@@ -332,7 +338,7 @@ body.cursor-link .custom-cursor-ring {
 
 .preloader-title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -521,7 +527,7 @@ body.cursor-link .custom-cursor-ring {
 
 .menu-link {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 7vw, 3.5rem);
+  font-size: clamp(1.8rem, 7vw, 3.5rem);
   font-weight: 900;
   color: var(--text-muted);
   text-decoration: none;
@@ -648,7 +654,7 @@ body.cursor-link .custom-cursor-ring {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.3rem, 7.5vw, 6rem);
+  font-size: clamp(1.8rem, 7.5vw, 6rem);
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -768,7 +774,7 @@ body.cursor-link .custom-cursor-ring {
 
 .portal-outer-text {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
   font-weight: 900;
   letter-spacing: 0.15em;
   color: #fff;
@@ -826,7 +832,7 @@ body.cursor-link .custom-cursor-ring {
 
 .portal-sliding-text {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 10vw, 8rem);
+  font-size: clamp(2rem, 10vw, 8rem);
   font-weight: 900;
   white-space: nowrap;
   text-transform: uppercase;
@@ -849,6 +855,12 @@ body.cursor-link .custom-cursor-ring {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .portal-cards-wrapper {
+    padding: 0 1rem;
+  }
+}
+
 .portal-inner-card {
   grid-area: card;
   background-color: rgba(10, 10, 15, 0.85);
@@ -861,6 +873,13 @@ body.cursor-link .custom-cursor-ring {
   box-shadow: 0 30px 65px rgba(0, 0, 0, 0.7);
   will-change: transform, opacity;
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .portal-inner-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
 }
 
 .portal-card-presentation {
@@ -928,7 +947,7 @@ body.cursor-link .custom-cursor-ring {
 
 .portal-card-title {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-size: clamp(1.4rem, 4vw, 2.8rem);
   font-weight: 900;
   color: #fff;
   margin-bottom: 1.5rem;
@@ -975,6 +994,26 @@ body.cursor-link .custom-cursor-ring {
   .split-dashboard {
     flex-direction: column;
     gap: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .split-section {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    padding: var(--section-padding);
+    display: block;
+  }
+  .split-container {
+    height: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .split-dashboard {
+    gap: 1.5rem;
   }
 }
 
@@ -1045,6 +1084,13 @@ body.cursor-link .custom-cursor-ring {
   will-change: transform, opacity;
   opacity: 0;
   /* Animated dynamically by ScrollTrigger */
+}
+
+@media (max-width: 768px) {
+  .dashboard-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
 }
 
 .col-cyan .dashboard-card:hover {
@@ -1127,6 +1173,23 @@ body.cursor-link .custom-cursor-ring {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
 }
 
+@media (max-width: 991px) {
+  .portal-circle {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .portal-circle span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .split-center-portal {
+    display: none;
+  }
+}
+
 .portal-circle span {
   font-family: var(--font-display);
   font-size: 1.2rem;
@@ -1161,7 +1224,7 @@ body.cursor-link .custom-cursor-ring {
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-size: clamp(1.8rem, 5vw, 4rem);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -1272,12 +1335,6 @@ body.cursor-link .custom-cursor-ring {
 }
 
 
-@media (max-width: 768px) {
-  .timeline-content {
-    width: 100%;
-    padding: 2rem 1.5rem;
-  }
-}
 
 .timeline-item.active .timeline-content {
   background-color: #08080c;
@@ -1342,6 +1399,13 @@ body.cursor-link .custom-cursor-ring {
   transition: var(--transition-smooth);
 }
 
+@media (max-width: 768px) {
+  .timeline-content {
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+}
+
 /* ==========================================================================
    WORK (GMS DIFFUSION) - HORIZONTAL PINNED SCROLL
    ========================================================================== */
@@ -1359,6 +1423,12 @@ body.cursor-link .custom-cursor-ring {
   /* Pushed down towards the center, reduced bottom padding */
   position: relative;
   flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .work-header-section {
+    padding: 6rem 0 1rem 0;
+  }
 }
 
 .work-header-grid {
@@ -1411,6 +1481,12 @@ body.cursor-link .custom-cursor-ring {
   background-color: var(--bg-secondary);
 }
 
+@media (max-width: 768px) {
+  .work-slide {
+    padding: 2rem 1.5rem 0 1.5rem;
+  }
+}
+
 .work-slide-content {
   display: flex;
   flex-direction: column;
@@ -1437,12 +1513,12 @@ body.cursor-link .custom-cursor-ring {
 
 .work-title-giant {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-size: clamp(1.8rem, 8vw, 6rem);
   /* Réduit pour que "DEVELOPPEMENT" rentre sur l'écran */
   font-weight: 900;
   line-height: 0.9;
   letter-spacing: -0.04em;
-  text-transform: uppercase;
+  text-transform: none;
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
   background-image: var(--accent-gradient);
@@ -1514,7 +1590,7 @@ body.cursor-link .custom-cursor-ring {
 
 .agency-title {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(1.8rem, 6vw, 4.5rem);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -1546,7 +1622,7 @@ body.cursor-link .custom-cursor-ring {
   height: 100vh;
   /* Pin fills exactly one screen */
   padding: 2.5rem 2rem 0;
-  /* Top + sides only, no bottom (dock handles it) */
+  /* Top + sides only, dock is absolutely positioned at bottom */
   background-color: var(--bg-secondary);
   position: relative;
   z-index: 2;
@@ -1554,6 +1630,8 @@ body.cursor-link .custom-cursor-ring {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-bottom: 80px;
+  /* Space reserved for the dock */
 }
 
 /* Make the container inside tools fill the full height */
@@ -1566,6 +1644,18 @@ body.cursor-link .custom-cursor-ring {
   /* Centers header and stage vertically as a group */
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tools {
+    padding-bottom: 60px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .tools>.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .tools-header {
@@ -1595,6 +1685,12 @@ body.cursor-link .custom-cursor-ring {
   max-width: 600px;
   margin: 0 auto;
   border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .drawers-grid {
+    margin-top: 50px;
+  }
 }
 
 /* Each drawer fills the stage absolutely */
@@ -1665,6 +1761,14 @@ body.cursor-link .custom-cursor-ring {
   overflow: visible;
 }
 
+@media (max-width: 768px) {
+  .drawer-content {
+    padding: 1rem 1rem 1.5rem;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+}
+
 /* Active Open State classes controlled by GSAP / ScrollTrigger */
 .drawer-card.open {
   border-color: rgba(255, 255, 255, 0.18);
@@ -1680,18 +1784,16 @@ body.cursor-link .custom-cursor-ring {
    APPLE-STYLE DOCK BAR (Bottom of tools section)
    ============================================= */
 .tools-dock {
-  /* Flex item — sits at bottom of the column, always visible */
-  flex-shrink: 0;
-  align-self: center;
-  margin-top: 170px;
-  /* Pousse le dock vers le bas (légèrement remonté de 30px) */
-  margin-bottom: -170px;
-  /* Annule l'effet sur le flexbox pour que le titre reste au centre ! */
+  /* Absolutely positioned at the bottom of the tools section */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 20;
   /* Frosted glass pill */
   background: rgba(28, 28, 32, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 22px;
+  border-radius: 22px 22px 0 0;
   backdrop-filter: blur(28px) saturate(180%);
   -webkit-backdrop-filter: blur(28px) saturate(180%);
   box-shadow:
@@ -1699,13 +1801,11 @@ body.cursor-link .custom-cursor-ring {
     0 2px 0 rgba(255, 255, 255, 0.06) inset;
   padding: 10px 18px;
   width: 600px;
-  /* MATCH NEW DRAWER WIDTH */
+  /* MATCH DRAWER WIDTH */
   max-width: calc(100% - 4rem);
   overflow-x: auto;
   overflow-y: visible;
   scrollbar-width: none;
-  position: relative;
-  /* needed for ::before separator */
 }
 
 .tools-dock::-webkit-scrollbar {
@@ -1808,9 +1908,9 @@ body.cursor-link .custom-cursor-ring {
 
 @media (max-width: 768px) {
   .tools-dock {
-    bottom: 10px;
+    bottom: 0;
     padding: 8px 12px;
-    border-radius: 16px;
+    border-radius: 16px 16px 0 0;
   }
 
   .dock-item {
@@ -2057,7 +2157,7 @@ body.cursor-link .custom-cursor-ring {
 
 .contact-heading {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(1.8rem, 6vw, 4.5rem);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.03em;
